@@ -5,7 +5,7 @@ module FastMcp
     # Base class for all MCP transports
     # This defines the interface that all transports must implement
     class BaseTransport
-      PROTOCOL_VERSION = '2025-06-18'
+      PROTOCOL_VERSION = '2024-11-05'
 
       attr_reader :server, :logger
 
