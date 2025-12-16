@@ -636,7 +636,6 @@ module FastMcp
 
         unless version == PROTOCOL_VERSION
           @logger.warn("Unsupported protocol version: #{version}, expected: #{PROTOCOL_VERSION}")
-          return false
         end
 
         true
