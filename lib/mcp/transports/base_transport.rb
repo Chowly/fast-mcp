@@ -5,7 +5,7 @@ module FastMcp
     # Base class for all MCP transports
     # This defines the interface that all transports must implement
     class BaseTransport
-      PROTOCOL_VERSION = '2024-11-05'
+      PROTOCOL_VERSION = '2025-03-28'
 
       attr_reader :server, :logger
 
@@ -47,7 +47,6 @@ module FastMcp
 
         unless version == PROTOCOL_VERSION
           @logger.warn("Unsupported protocol version: #{version}, expected: #{PROTOCOL_VERSION}")
-          return false
         end
 
         true
